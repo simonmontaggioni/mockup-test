@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 127px;
+}
+
+.certificates {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.certificates-separator {
+  display: inline-block;
+  width: 32px;
+}
+
+.norton,
+.mcafee {
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: unset;
+    padding: 30px 27px;
+    gap: 50px;
+  }
+
+  .separator {
+    display: inline-block;
+  }
+
+  .certificates {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .certificates-separator {
+    display: inline-block;
+    width: 32px;
+  }
+}

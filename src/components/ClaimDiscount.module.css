@@ -1,0 +1,30 @@
+.claim-discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 64px;
+  border-radius: 50px;
+  background-color: var(--green-2);
+  gap: 10px;
+}
+
+.claim-discount span {
+  color: var(--foreground);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .claim-discount {
+    padding: 16px 0px;
+    gap: 10px;
+  }
+
+  .claim-discount span {
+    font-size: 14px;
+  }
+}

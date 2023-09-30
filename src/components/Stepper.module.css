@@ -1,0 +1,135 @@
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 50px 127px;
+}
+
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-icon,
+.step-icon-completed,
+.step-icon-current {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.step-icon {
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.step-icon-current {
+  background-color: var(--blue);
+  color: var(--foreground);
+  border: 2px solid var(--blue);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.step-icon-completed {
+  background-color: var(--green);
+  border: 2px solid var(--green);
+}
+
+.step-text,
+.step-text-current {
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.step-text-current {
+  font-weight: 700;
+}
+
+.step-name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 22px */
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  .stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0px 0;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .step-icon,
+  .step-icon-completed,
+  .step-icon-current {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 14px;
+  }
+
+  .step-icon {
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    font-size: 14px;
+    font-weight: 400;
+    height: 20px;
+    height: 20px;
+  }
+
+  .step-icon-current {
+    background-color: var(--blue);
+    color: var(--foreground);
+    border: 2px solid var(--blue);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .step-icon-completed {
+    background-color: var(--green);
+    border: 2px solid var(--green);
+  }
+
+  .step-number {
+    display: none;
+  }
+
+  .step-text,
+  .step-text-current {
+    margin-left: 0px;
+    text-transform: capitalize;
+  }
+
+  .step-text-current .step-name {
+    font-weight: 700;
+  }
+
+  .step-name {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+    text-transform: capitalize;
+  }
+}

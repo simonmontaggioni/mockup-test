@@ -1,0 +1,28 @@
+.no-thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--red);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.no-thanks p {
+  width: fit-content;
+  border-bottom: 0.5px solid var(--red);
+}
+
+@media (max-width: 600px) {
+  .no-thanks {
+    font-size: 12px;
+  }
+
+  .no-thanks p {
+    width: fit-content;
+    border-bottom: 0.5px solid var(--red);
+  }
+}

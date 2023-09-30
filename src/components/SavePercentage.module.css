@@ -1,0 +1,35 @@
+.save-percentage {
+  display: flex;
+  width: 100%;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+}
+
+.highlight {
+  color: var(--blue);
+}
+
+@media (max-width: 600px) {
+  .save-percentage {
+    display: flex;
+    width: 100%;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .highlight {
+    color: var(--blue);
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}

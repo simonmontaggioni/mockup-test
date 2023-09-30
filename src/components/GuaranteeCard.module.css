@@ -1,0 +1,57 @@
+.guarantee-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.seal {
+  display: inline-flex;
+  width: 88px;
+  height: 88px;
+}
+.seal img {
+  max-width: unset;
+}
+.card-body p {
+  color: var(--foreground-gray);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.strong {
+  color: var(--foreground-dark);
+}
+
+@media (max-width: 600px) {
+  .guarantee-card {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .seal {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+  }
+
+  .seal img {
+    max-width: unset;
+  }
+
+  .card-body p {
+    color: var(--foreground-gray);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+  }
+
+  .strong {
+    color: var(--foreground-dark);
+    font-weight: 700;
+  }
+}

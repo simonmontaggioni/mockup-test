@@ -3,25 +3,82 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-dark: #252f3d;
+  --background-light: #ffffff;
+  --background-light2: #fafafa;
+  --foreground: #ffffff;
+  --foreground-gray: #4d5254;
+  --foreground-dark: #000000;
+  --green: #85bf55;
+  --green-2: #59ae43;
+  --light-green: #5bb59a;
+  --blue: #2c7ef8;
+  --light-blue: #edf3fd;
+  --light-gray: #cfcfcf;
+  --red: #f82c2c;
+  --sm: 600px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 127px;
+  background-color: var(--background-light2);
+  border-radius: 10px;
+  padding: 40px;
+  gap: 40px;
+}
+
+.left-container {
+  width: 550px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 550px;
+}
+
+@media (max-width: 600px) {
+  main {
+    gap: 50px;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .page {
+    width: 90vw;
+  }
+
+  .product {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-light);
+    border-radius: 10px;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .left-container {
+    display: none;
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+  }
 }
